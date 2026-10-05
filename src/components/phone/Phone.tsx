@@ -26,7 +26,7 @@ export default function Phone({
       style={{ width: `calc(414px * ${scale})`, height: `calc(868px * ${scale})` }}
     >
       <div
-        className="absolute left-0 top-0 origin-top-left rounded-[60px] bg-[#0d0f13] p-3 shadow-[0_50px_100px_-30px_rgb(10_20_40/0.45),0_0_0_1px_rgb(255_255_255/0.06)_inset]"
+        className="absolute left-0 top-0 origin-top-left rounded-[60px] bg-[#0d0f13] p-3 shadow-[0_50px_100px_-30px_rgb(10_20_40/0.45),0_0_0_1px_rgb(255_255_255/0.06)_inset] dark:bg-[linear-gradient(150deg,#4a505b,#16191e_30%,#16191e_70%,#3b414b)] dark:shadow-[0_0_0_1.5px_rgb(255_255_255/0.18),0_50px_100px_-30px_rgb(0_0_0/0.8)]"
         style={{ width: 414, height: 868, transform: `scale(${scale})` }}
       >
         <div aria-hidden className="pointer-events-none absolute inset-[3px] rounded-[57px] ring-1 ring-white/10" />

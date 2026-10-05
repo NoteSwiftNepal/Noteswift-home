@@ -16,6 +16,7 @@ import Reveal from "@/components/ui/Reveal";
 import CtaBand from "@/components/ui/CtaBand";
 import Phone from "@/components/phone/Phone";
 import { HomeScreen, LearnScreen, LessonScreen, TestScreen, SikaiChatScreen, SikaiWelcomeScreen, ProgressScreen, PlayStoreScreen } from "@/components/phone/screens";
+import ScreenCycle from "@/components/phone/ScreenCycle";
 import ScreenShowcase from "@/components/sections/ScreenShowcase";
 import NepalMap from "@/components/sections/NepalMap";
 
@@ -60,14 +61,24 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
 
           <div className="anim-rise relative mx-auto h-[600px] w-full max-w-[560px] sm:h-[680px]" style={{ "--d": "160ms" } as React.CSSProperties}>
             <div className="absolute right-0 top-14 hidden sm:block">
-              <Phone label={t.hero.phoneChat} scale={0.66}>
-                <SikaiChatScreen />
-              </Phone>
+              <div className="anim-tilt [--ry:12deg]" style={{ "--d": "300ms" } as React.CSSProperties}>
+                <Phone label={t.hero.phoneChat} scale={0.66}>
+                  <SikaiChatScreen />
+                </Phone>
+              </div>
             </div>
             <div className="absolute left-1/2 top-0 -translate-x-1/2 sm:left-4 sm:translate-x-0">
-              <Phone label={t.hero.phoneHome} scale={0.76}>
-                <HomeScreen />
-              </Phone>
+              <div className="anim-tilt">
+                <Phone label={t.hero.phoneHome} scale={0.76}>
+                  <ScreenCycle>
+                    <HomeScreen />
+                    <LearnScreen />
+                    <LessonScreen />
+                    <TestScreen />
+                    <ProgressScreen />
+                  </ScreenCycle>
+                </Phone>
+              </div>
             </div>
             <div className="anim-float border border-line bg-surface shadow-soft absolute -bottom-12 -left-28 z-10 hidden items-center gap-3 rounded-2xl px-4 py-3 lg:flex" style={{ "--d": "400ms" } as React.CSSProperties}>
               <span className="flex size-9 items-center justify-center rounded-full bg-[#EF4444]/12 text-[#EF4444]">
