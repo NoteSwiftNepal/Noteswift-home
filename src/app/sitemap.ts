@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: absoluteUrl(l, path),
       lastModified: lastModified ?? new Date().toISOString().slice(0, 10),
       changeFrequency: "weekly" as const,
-      priority: l === "en" ? priority : priority * 0.9,
+      priority: l === "en" ? priority : Math.round(priority * 90) / 100,
       alternates: { languages: { en: absoluteUrl("en", path), "ne-NP": absoluteUrl("ne", path) } },
     })),
   );
