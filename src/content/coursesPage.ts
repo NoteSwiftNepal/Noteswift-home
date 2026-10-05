@@ -1,0 +1,131 @@
+const en = {
+  meta: {
+    title: "Courses: SEE, Class 11 and Class 12",
+    description: "Note Swift courses for SEE (Class 10, CDC syllabus), Class 11 and Class 12 (NEB curriculum), in Science and Management tracks, with lessons, notes, tests and SikAI.",
+  },
+  crumb: "Courses",
+  hero: {
+    title: "A course for every class, built on your syllabus.",
+    lead: "Pick SEE, Class 11 or Class 12. Each course follows the official syllabus chapter by chapter and includes everything you need to learn, practise and revise.",
+  },
+  jumpLabel: "Jump to a class",
+  tracksLabel: "Tracks",
+  subjectsLabel: "Subjects",
+  viewCourse: "View course",
+  includes: {
+    title: "Every course includes",
+    lead: "No add-ons to hunt for. The same toolkit comes with every class.",
+    items: [
+      { key: "lessons", title: "Video lessons", body: "Chapter-wise lessons from experienced teachers." },
+      { key: "notes", title: "Notes", body: "Clean, exam-focused notes beside each lesson." },
+      { key: "mindmaps", title: "Mind maps", body: "One-page maps to revise a chapter quickly." },
+      { key: "important", title: "Important questions", body: "The questions that keep coming back." },
+      { key: "pyq", title: "Previous year questions", body: "PYQs organised by chapter." },
+      { key: "mcq", title: "MCQs and DPP", body: "Daily practice problems with instant scores." },
+      { key: "tests", title: "Chapter and mock tests", body: "Check each chapter, then sit full mock papers." },
+      { key: "live", title: "Live and recorded classes", body: "Join live, or watch the recording later." },
+      { key: "sikai", title: "SikAI", body: "Ask by subject and module, any time." },
+    ],
+  },
+  enrol: {
+    title: "Enrol inside the student app.",
+    lead: "There is no separate checkout on this website. Enrolment and payment happen securely in the Note Swift student app.",
+    steps: [
+      { title: "Open the app", body: "Install Note Swift from Google Play, or sign in from any browser." },
+      { title: "Choose your course", body: "Pick your class and your track, then review what is included." },
+      { title: "Enrol and pay securely", body: "Complete enrolment and payment in the app, and start the first chapter." },
+    ],
+  },
+  detail: {
+    tracksTitle: "Choose your track",
+    tracksLead: "Each track lists the subjects you study in it.",
+    includesTitle: "What every course includes",
+    includesLead: "Everything below comes with this course.",
+    faqTitle: "Questions about this course",
+    otherTitle: "Looking at another class?",
+    openCatalogue: "All courses",
+    enrolTitle: "Enrol in the app",
+    enrolBody: "Enrolment and payment happen securely in the Note Swift student app.",
+    subjectCount: "subjects",
+    faq: {
+      tracks: { q: "Which tracks does the {label} course have?", a: "The {label} course has these tracks: {tracks}. The subjects in each track are listed on this page." },
+      syllabus: { q: "Does it follow the official syllabus?", a: "Yes. The course is organised chapter by chapter around the {syllabus}." },
+      enrol: { q: "How do I enrol?", a: "Open the Note Swift student app, choose {label} and your track, then enrol and pay securely inside the app." },
+      devices: { q: "Can I study on my phone and my laptop?", a: "Yes. Use the Android app from Google Play, or sign in from any browser. Your progress stays on one account." },
+      live: { q: "What if I miss a live class?", a: "Recorded classes stay in your course, so you can watch them whenever you want." },
+      sikai: { q: "Can I ask SikAI about my subjects?", a: "Yes. In the app, choose a subject and module from your course, then ask SikAI your question." },
+    },
+    levelSee: "Secondary education (Class 10)",
+    levelNeb: "Higher secondary education (+2)",
+    cta: { title: "Start {label} with the first chapter.", lead: "Open the app, choose your track and begin." },
+  },
+  cta: { title: "Not sure which course fits?", lead: "Tell us your class and subjects and we will point you to the right one." },
+};
+
+export type CoursesPageCopy = typeof en;
+
+const ne: CoursesPageCopy = {
+  meta: {
+    title: "कोर्सहरू: SEE, कक्षा ११ र कक्षा १२",
+    description: "SEE (कक्षा १०, CDC पाठ्यक्रम), कक्षा ११ र कक्षा १२ (NEB पाठ्यक्रम) का लागि विज्ञान र व्यवस्थापन ट्र्याकमा Note Swift का कोर्सहरू: पाठ, नोट्स, परीक्षा र SikAI सहित।",
+  },
+  crumb: "कोर्सहरू",
+  hero: {
+    title: "हरेक कक्षाका लागि कोर्स, तपाईंको पाठ्यक्रममै आधारित।",
+    lead: "SEE, कक्षा ११ वा कक्षा १२ छान्नुहोस्। हरेक कोर्सले आधिकारिक पाठ्यक्रम अध्याय अनुसार पछ्याउँछ र सिक्न, अभ्यास गर्न र दोहोर्याउन चाहिने सबै कुरा समेट्छ।",
+  },
+  jumpLabel: "कक्षामा जानुहोस्",
+  tracksLabel: "ट्र्याकहरू",
+  subjectsLabel: "विषयहरू",
+  viewCourse: "कोर्स हेर्नुहोस्",
+  includes: {
+    title: "हरेक कोर्समा के के छ",
+    lead: "अलग्गै खोज्नुपर्ने थप सामग्री छैन। हरेक कक्षामा उही पूर्ण सामग्री आउँछ।",
+    items: [
+      { key: "lessons", title: "भिडियो पाठ", body: "अनुभवी शिक्षकबाट अध्याय अनुसार पाठ।" },
+      { key: "notes", title: "नोट्स", body: "हरेक पाठसँगै स्पष्ट, परीक्षा केन्द्रित नोट्स।" },
+      { key: "mindmaps", title: "माइन्ड म्याप", body: "अध्याय छिटो दोहोर्याउन एक पानाका नक्सा।" },
+      { key: "important", title: "महत्त्वपूर्ण प्रश्न", body: "बारम्बार आउने प्रश्नहरू।" },
+      { key: "pyq", title: "विगत वर्षका प्रश्न", body: "अध्याय अनुसार मिलाइएका PYQ।" },
+      { key: "mcq", title: "MCQ र DPP", body: "तुरुन्त अंकसहित दैनिक अभ्यास समस्या।" },
+      { key: "tests", title: "अध्याय र मक परीक्षा", body: "हरेक अध्याय जाँच्नुहोस्, अनि पूर्ण मक प्रश्नपत्र दिनुहोस्।" },
+      { key: "live", title: "लाइभ र रेकर्ड गरिएका कक्षा", body: "लाइभ जोडिनुहोस्, वा पछि रेकर्डिङ हेर्नुहोस्।" },
+      { key: "sikai", title: "SikAI", body: "विषय र मोड्युल अनुसार, जुनसुकै समय सोध्नुहोस्।" },
+    ],
+  },
+  enrol: {
+    title: "विद्यार्थी एपभित्रै भर्ना गर्नुहोस्।",
+    lead: "यो वेबसाइटमा छुट्टै चेकआउट छैन। भर्ना र भुक्तानी Note Swift विद्यार्थी एपमा सुरक्षित रूपमा हुन्छ।",
+    steps: [
+      { title: "एप खोल्नुहोस्", body: "Google Play बाट Note Swift इन्स्टल गर्नुहोस्, वा जुनसुकै ब्राउजरबाट लग इन गर्नुहोस्।" },
+      { title: "कोर्स छान्नुहोस्", body: "आफ्नो कक्षा र ट्र्याक छान्नुहोस्, अनि के के समावेश छ हेर्नुहोस्।" },
+      { title: "सुरक्षित रूपमा भर्ना र भुक्तानी गर्नुहोस्", body: "एपमै भर्ना र भुक्तानी पूरा गर्नुहोस् र पहिलो अध्याय सुरु गर्नुहोस्।" },
+    ],
+  },
+  detail: {
+    tracksTitle: "आफ्नो ट्र्याक छान्नुहोस्",
+    tracksLead: "हरेक ट्र्याकमा तपाईंले पढ्ने विषयहरू सूचीबद्ध छन्।",
+    includesTitle: "हरेक कोर्समा के के छ",
+    includesLead: "तलका सबै कुरा यो कोर्ससँगै आउँछन्।",
+    faqTitle: "यो कोर्सबारे प्रश्नहरू",
+    otherTitle: "अर्को कक्षा हेर्दै हुनुहुन्छ?",
+    openCatalogue: "सबै कोर्स",
+    enrolTitle: "एपमा भर्ना गर्नुहोस्",
+    enrolBody: "भर्ना र भुक्तानी Note Swift विद्यार्थी एपमा सुरक्षित रूपमा हुन्छ।",
+    subjectCount: "विषय",
+    faq: {
+      tracks: { q: "{label} को कोर्समा कुन कुन ट्र्याक छन्?", a: "{label} को कोर्समा यी ट्र्याक छन्: {tracks}। हरेक ट्र्याकका विषयहरू यही पृष्ठमा सूचीबद्ध छन्।" },
+      syllabus: { q: "के यसले आधिकारिक पाठ्यक्रम पछ्याउँछ?", a: "पछ्याउँछ। कोर्स {syllabus} अनुसार अध्याय अनुसार मिलाइएको छ।" },
+      enrol: { q: "भर्ना कसरी गर्ने?", a: "Note Swift विद्यार्थी एप खोल्नुहोस्, {label} र आफ्नो ट्र्याक छान्नुहोस्, अनि एपभित्रै सुरक्षित रूपमा भर्ना र भुक्तानी गर्नुहोस्।" },
+      devices: { q: "के फोन र ल्यापटप दुवैमा पढ्न मिल्छ?", a: "मिल्छ। Google Play को एन्ड्रोइड एप प्रयोग गर्नुहोस्, वा जुनसुकै ब्राउजरबाट लग इन गर्नुहोस्। तपाईंको प्रगति एउटै खातामा रहन्छ।" },
+      live: { q: "लाइभ कक्षा छुट्यो भने के गर्ने?", a: "रेकर्ड गरिएका कक्षा तपाईंको कोर्समै रहन्छन्, त्यसैले जतिबेला चाहे पनि हेर्न सक्नुहुन्छ।" },
+      sikai: { q: "के आफ्ना विषयबारे SikAI लाई सोध्न मिल्छ?", a: "मिल्छ। एपमा आफ्नो कोर्सबाट विषय र मोड्युल छान्नुहोस्, अनि SikAI लाई प्रश्न सोध्नुहोस्।" },
+    },
+    levelSee: "माध्यमिक शिक्षा (कक्षा १०)",
+    levelNeb: "उच्च माध्यमिक शिक्षा (+२)",
+    cta: { title: "{label} को पहिलो अध्यायबाट सुरु गर्नुहोस्।", lead: "एप खोल्नुहोस्, आफ्नो ट्र्याक छान्नुहोस् र सुरु गर्नुहोस्।" },
+  },
+  cta: { title: "कुन कोर्स मिल्छ थाहा छैन?", lead: "आफ्नो कक्षा र विषय बताउनुहोस्, हामी सही कोर्स सुझाउँछौं।" },
+};
+
+export const coursesPage = { en, ne };

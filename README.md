@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# noteswift-home
 
-## Getting Started
+Public marketing site for Note Swift (noteswift.com.np). Next.js 16 App Router, Tailwind v4, Geist + Mukta (Devanagari), Phosphor icons. No CMS and no backend: all copy lives in typed content files.
 
-First, run the development server:
+## Run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm run build && npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Set `NEXT_PUBLIC_SITE_URL` in production if the domain is not `https://noteswift.com.np`. It drives canonical URLs, hreflang, the sitemap and Open Graph.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How it is organised
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Path | What it holds |
+|---|---|
+| `src/app/[lang]/` | Every page. `lang` is `en` or `ne`. |
+| `src/proxy.ts` | Serves English at `/…` and Nepali at `/ne/…`; redirects `/en/…` to the root so each page has one URL. |
+| `src/content/*.ts` | All copy, one file per page, each exporting `{ en, ne }`. `ne` is typed as `typeof en`, so a missing translation fails the type check. |
+| `src/lib/site.ts` | Real brand details: domains, portals, Play Store, email, phone. |
+| `src/lib/seo.tsx` | `pageMetadata()` (canonical, hreflang, Open Graph) and JSON-LD helpers. |
+| `src/components/phone/` | Phone frame and recreations of the real student app screens (from `noteswift-student`). |
+| `scripts/brand-assets.mjs` | Regenerates `public/brand/*` and the app icons from the logo files in the sibling repos. |
 
-## Learn More
+## Adding a page
 
-To learn more about Next.js, take a look at the following resources:
+1. Add `src/content/<page>.ts` with `en` and `ne`.
+2. Add `src/app/[lang]/<page>/page.tsx` using `pageMetadata()` and `PageHero`.
+3. Add the path to `src/lib/routes.ts` (sitemap) and, if it belongs in navigation, to `src/content/common.ts`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Accessibility and display settings
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The settings button in the header stores theme (system, light, dark), text size, high contrast, reduced motion and link underlines in `localStorage`. An inline script in the root layout applies them before first paint. Animations are CSS only and respect both `prefers-reduced-motion` and the in-site setting.
