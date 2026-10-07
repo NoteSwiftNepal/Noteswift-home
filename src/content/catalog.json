@@ -1,0 +1,969 @@
+{
+ "see/english-medium": [
+  {
+   "name": "Science and Technology",
+   "videos": 25,
+   "notes": 23,
+   "chapters": [
+    "Scientific Study",
+    "Classification of Living Beings",
+    "Honey Bee",
+    "Heredity",
+    "Physiological Structure and Life Process",
+    "Nature and Environment",
+    "Force and Motion",
+    "Pressure",
+    "Heat",
+    "Wave",
+    "Electricity and Magnetism",
+    "The Universe",
+    "ICT",
+    "Classification of Elements",
+    "Chemical Reactions",
+    "Gases",
+    "Metals and Non-Metals",
+    "Hydrocarbons and Their Compounds",
+    "Chemicals Used in Daily Life"
+   ]
+  },
+  {
+   "name": "Mathematics",
+   "videos": 18,
+   "notes": 18,
+   "chapters": [
+    "Sets",
+    "Compound Interest",
+    "Growth and Depreciation",
+    "Money Exchange",
+    "Area and Volume",
+    "Sequence and Series",
+    "Quadratic Equations",
+    "Algebraic Fractions",
+    "Indices",
+    "Area of Triangle and Quadrilateral",
+    "Construction",
+    "Circle",
+    "Statistics",
+    "Probability",
+    "Trigonometry"
+   ]
+  },
+  {
+   "name": "English",
+   "videos": 2,
+   "notes": 18,
+   "chapters": [
+    "Current Affairs & Issues",
+    "Festivals & Celebrations",
+    "Health & Wellness",
+    "Work & Leisure",
+    "Food & Cuisine",
+    "Cyber Security",
+    "Hobbies & Interests",
+    "History & Culture",
+    "Games & Sports",
+    "Ethics & Morality",
+    "Nature & Development",
+    "Population & Migration",
+    "Travel & Adventure",
+    "People & Places",
+    "Success & Celebration",
+    "Countries & Towns",
+    "Media & Entertainment",
+    "Science and Experiment"
+   ]
+  },
+  {
+   "name": "नेपाली",
+   "videos": 0,
+   "notes": 16,
+   "chapters": [
+    "उज्यालो यात्रा",
+    "घरझगडा",
+    "चिकित्सा विज्ञान र आयुर्वेद चिकित्सा",
+    "यस्तो कहिल्यै नहोस्",
+    "लक्ष्मीप्रसाद देवकोटा",
+    "अधिकार ठुलो कि कर्तव्य ठुलो?",
+    "शत्रु",
+    "नेपाली हाम्रो श्रम र सिप",
+    "मेरो देशको शिक्षा",
+    "व्यावसायिक चिठी",
+    "कर्तव्य",
+    "पाब्लो पिकासो",
+    "पर्खनुहोस्",
+    "घरको माया",
+    "गाउँमाथि एउटा कविता",
+    "आयाम"
+   ]
+  },
+  {
+   "name": "Optional Mathematics",
+   "videos": 11,
+   "notes": 12,
+   "chapters": [
+    "Algebra",
+    "Limit and Continuity",
+    "Matrix and Determinant",
+    "Coordinate Geometry",
+    "Trigonometry",
+    "Vector",
+    "Transformation",
+    "Statistics"
+   ]
+  },
+  {
+   "name": "Office Practice and Accountancy",
+   "videos": 0,
+   "notes": 16,
+   "chapters": [
+    "Office Management and Office Procedure",
+    "Filing and Indexing",
+    "Banking, Insurance and Financial Institutions",
+    "Introduction to Taxation",
+    "Business Accounting",
+    "Bank Reconciliation Statement",
+    "Accounting Errors",
+    "Final Accounts",
+    "Government Accounting System of Nepal",
+    "Revenue Accounting",
+    "Government Expenditure Accounting",
+    "Inventory Accounting",
+    "Treasury and Deposit Accounting",
+    "Internal Control and Auditing",
+    "Institutions Involved in Nepal's Government Accounting System",
+    "Application of Information Technology in Office Operation and Accounting"
+   ]
+  },
+  {
+   "name": "Economics",
+   "videos": 7,
+   "notes": 16,
+   "chapters": [
+    "Economy",
+    "Concept of Scarcity, Choice, Opportunity Cost and Allocation of Resources",
+    "Macroeconomic Variables",
+    "Revenue and Revenue Curves",
+    "Cost and Cost Curves",
+    "Market Structure and Product Pricing",
+    "Theory of Factor Pricing",
+    "Public Finance",
+    "International Trade",
+    "Theories of Economic Development",
+    "Agriculture",
+    "Industry",
+    "Tourism Industry",
+    "Foreign Employment",
+    "Presentation of Data",
+    "Measures of Central Tendency"
+   ]
+  },
+  {
+   "name": "सामाजिक अध्ययन",
+   "videos": 6,
+   "notes": 74,
+   "chapters": [
+    "हामी र हाम्रो समाज",
+    "विकास र विकासका पूर्वाधार",
+    "हाम्रा सामाजिक मूल्य र मान्यता",
+    "सामाजिक समस्या र समाधान",
+    "नागरिक चेतना",
+    "हाम्रो पृथ्वी",
+    "हाम्रो विगत",
+    "आर्थिक क्रियाकलाप",
+    "हाम्रो अन्तर्राष्ट्रिय सम्बन्ध र सहयोग",
+    "जनसङ्ख्या र यसको व्यवस्थापन"
+   ]
+  },
+  {
+   "name": "Computer",
+   "videos": 4,
+   "notes": 11,
+   "chapters": [
+    "Networking and Telecommunication",
+    "Ethical and Social Issues in ICT",
+    "Computer Security",
+    "E-commerce",
+    "Contemporary Technology",
+    "Number System",
+    "Database Management System (DBMS)",
+    "Programming in QBASIC",
+    "Modular Programming",
+    "File Handling in QBASIC",
+    "Structured Programming in C"
+   ]
+  }
+ ],
+ "see/nepali-medium": [
+  {
+   "name": "विज्ञान तथा प्रविधि",
+   "videos": 16,
+   "notes": 23,
+   "chapters": [
+    "वैज्ञानिक अध्ययन",
+    "जीवहरूको वर्गीकरण",
+    "मौरी",
+    "वंशाणुगत गुण",
+    "शारीरिक संरचना तथा जीवन प्रक्रिया",
+    "प्रकृति तथा वातावरण",
+    "बल तथा गति",
+    "चाप",
+    "ताप",
+    "तरङ्ग",
+    "विद्युत् तथा चुम्बकत्व",
+    "ब्रह्माण्ड",
+    "सूचना तथा सञ्चार प्रविधि",
+    "तत्त्वहरूको वर्गीकरण",
+    "रासायनिक प्रतिक्रिया",
+    "ग्यास",
+    "धातु तथा अधातु",
+    "हाइड्रोकार्बन तथा तिनका यौगिक",
+    "दैनिक जीवनमा प्रयोग हुने रसायनहरू"
+   ]
+  },
+  {
+   "name": "गणित",
+   "videos": 18,
+   "notes": 22,
+   "chapters": [
+    "समूह",
+    "चक्रवृद्धि ब्याज",
+    "चक्रवृद्धि वृद्धि तथा ह्रास",
+    "मुद्रा र विनिमय दर",
+    "क्षेत्रफल तथा आयतन",
+    "अनुक्रम तथा श्रेणी",
+    "द्विघात समीकरण",
+    "बीजगणितीय भिन्न",
+    "घाताङ्क",
+    "त्रिभुज र चतुर्भुजहरू",
+    "रचना",
+    "वृत्त",
+    "तथ्याङ्क",
+    "सम्भाव्यता",
+    "त्रिकोणमिति"
+   ]
+  },
+  {
+   "name": "नेपाली",
+   "videos": 1,
+   "notes": 16,
+   "chapters": [
+    "उज्यालो यात्रा",
+    "घरझगडा",
+    "चिकित्सा विज्ञान र आयुर्वेद चिकित्सा",
+    "यस्तो कहिल्यै नहोस्",
+    "लक्ष्मीप्रसाद देवकोटा",
+    "अधिकार ठुलो कि कर्तव्य ठुलो?",
+    "शत्रु",
+    "नेपाली हाम्रो श्रम र सिप",
+    "मेरो देशको शिक्षा",
+    "व्यावसायिक चिठी",
+    "कर्तव्य",
+    "पाब्लो पिकासो",
+    "पर्खनुहोस्",
+    "घरको माया",
+    "गाउँमाथि एउटा कविता",
+    "आयाम"
+   ]
+  },
+  {
+   "name": "English",
+   "videos": 7,
+   "notes": 18,
+   "chapters": [
+    "Current Affairs & Issues",
+    "Festivals and Celebrations",
+    "Health and Wellness",
+    "Work and Leisure",
+    "Science and Experiment",
+    "Food and Cuisine",
+    "Cyber Security",
+    "Hobbies and Interests",
+    "History and Culture",
+    "Games and Sports",
+    "Ethics and Morality",
+    "Nature and Development",
+    "Population and Migration",
+    "Travel and Adventure",
+    "People and Places",
+    "Success and Celebration",
+    "Countries and Town",
+    "Media and Entertainment"
+   ]
+  },
+  {
+   "name": "ऐच्छिक गणित",
+   "videos": 16,
+   "notes": 16,
+   "chapters": [
+    "बीजगणित",
+    "सीमा तथा निरन्तरता",
+    "म्याट्रिक्स",
+    "निर्देशाङ्क ज्यामिति",
+    "त्रिकोणमिति",
+    "सदिश",
+    "रूपान्तरण",
+    "तथ्याङ्क"
+   ]
+  },
+  {
+   "name": "अर्थशास्त्र",
+   "videos": 8,
+   "notes": 16,
+   "chapters": [
+    "अर्थव्यवस्था",
+    "दुर्लभता, छनोट, अवसर लागत र स्रोतको बाँडफाँडको अवधारणा",
+    "समष्टिगत आर्थिक चरहरू",
+    "लागत र लागत वक्ररेखाहरू",
+    "आय र आय वक्ररेखाहरू",
+    "बजार संरचना र उत्पादनको मूल्य निर्धारण",
+    "साधनको मूल्य निर्धारण सिद्धान्त",
+    "सार्वजनिक वित्त",
+    "अन्तर्राष्ट्रिय व्यापार",
+    "आर्थिक विकासका सिद्धान्तहरू",
+    "कृषि",
+    "उद्योग",
+    "पर्यटन उद्योग",
+    "वैदेशिक रोजगारी",
+    "तथ्याङ्कको प्रस्तुतीकरण",
+    "केन्द्रीय प्रवृत्तिका मापकहरू"
+   ]
+  },
+  {
+   "name": "कार्यालय व्यवस्थापन तथा लेखाशास्त्र",
+   "videos": 2,
+   "notes": 16,
+   "chapters": [
+    "कार्यालय व्यवस्थापन र कार्यविधि",
+    "फाइलिङ तथा अनुक्रमणिका",
+    "बैंक, बिमा तथा वित्तीय संस्था",
+    "करको परिचय",
+    "व्यावसायिक लेखा",
+    "बैंक हिसाब मिलान",
+    "लेखात्मक गल्तीहरू",
+    "अन्तिम खाता",
+    "नेपालको सरकारी लेखा प्रणाली",
+    "राजस्व लेखा",
+    "सरकारी खर्चको लेखा",
+    "जिन्सी लेखा",
+    "कोष लेखाङ्कन र धरौटी लेखा",
+    "आन्तरिक नियन्त्रण र लेखापरीक्षण",
+    "नेपालको सरकारी लेखा प्रणालीमा संलग्न निकायहरू",
+    "कार्यालय सञ्चालन र लेखामा सूचना प्रविधिको प्रयोग"
+   ]
+  },
+  {
+   "name": "Computer",
+   "videos": 0,
+   "notes": 11,
+   "chapters": [
+    "Networking and Telecommunication",
+    "Ethical and Social Issues in ICT",
+    "Computer Security",
+    "E-commerce",
+    "Contemporary Technology",
+    "Number System",
+    "Database Management System",
+    "Programming in QBASIC",
+    "Modular Programming",
+    "File Handling in QBASIC",
+    "Structured Programing in C"
+   ]
+  },
+  {
+   "name": "सामाजिक अध्ययन",
+   "videos": 5,
+   "notes": 74,
+   "chapters": [
+    "हामी र हाम्रो समाज",
+    "विकास र विकासका पूर्वाधार",
+    "हाम्रा सामाजिक मूल्य र मान्यता",
+    "सामाजिक समस्या र समाधान",
+    "नागरिक चेतना",
+    "हाम्रो पृथ्वी",
+    "हाम्रो विगत",
+    "आर्थिक क्रियाकलाप",
+    "हाम्रो अन्तर्राष्ट्रिय सम्बन्ध र सहयोग",
+    "जनसङ्ख्या र यसको व्यवस्थापन"
+   ]
+  }
+ ],
+ "class-11/science": [
+  {
+   "name": "Physics",
+   "videos": 9,
+   "notes": 26,
+   "chapters": [
+    "Physical Quantities",
+    "Vectors",
+    "Kinematics",
+    "Dynamics",
+    "Work, Energy and Power",
+    "Circular Motion",
+    "Gravitation",
+    "Elasticity",
+    "Heat and Temperature",
+    "Thermal Expansion",
+    "Quantity of Heat",
+    "Rate of Heat Flow",
+    "Ideal Gas",
+    "Reflection at Curved Mirror",
+    "Refraction at Plane Surface",
+    "Refraction Through Prism",
+    "Lenses",
+    "Dispersion",
+    "Electric Charge",
+    "Electric Field",
+    "Electric Potential and Energy",
+    "Capacitor",
+    "DC Circuit",
+    "Nuclear Physics",
+    "Solid",
+    "Recent Trends in Physics"
+   ]
+  },
+  {
+   "name": "Chemistry",
+   "videos": 12,
+   "notes": 30,
+   "chapters": [
+    "Foundation and Fundamentals",
+    "Stoichiometry",
+    "Atomic Structure",
+    "Periodic Table",
+    "Chemical Bounding and Shape of Molecules",
+    "Oxidation and Reduction",
+    "State of Matter",
+    "Chemical Equilibrium",
+    "Chemistry of Non Metals",
+    "Chemistry of Metals",
+    "Bio-Inorganic Chemistry",
+    "Basic Concept of Organic Chemistry",
+    "Fundamental Principle of Organic Chemistry",
+    "Hydrocarbons",
+    "Aromatic Chemistry",
+    "Fundamentals of Applied Chemistry",
+    "Modern Chemical Manufactures"
+   ]
+  },
+  {
+   "name": "Mathematics",
+   "videos": 12,
+   "notes": 23,
+   "chapters": [
+    "Logic, Sets and Real Number System",
+    "Function",
+    "Curve Sketching",
+    "Sequence and Series",
+    "Matrix and Determinants",
+    "Quadratic Equations",
+    "Complex Numbers",
+    "Inverse Circular Function and Trigonometric Equation",
+    "Analytic Geometry",
+    "Pair of Straight Lines",
+    "Coordinates in Space",
+    "Vectors",
+    "Measures of Dispersion",
+    "Probability",
+    "Limits and Continuity",
+    "The Derivatives",
+    "Application of Derivatives",
+    "Antiderivative",
+    "Numerical Computation",
+    "Numerical Integration",
+    "Statics",
+    "Dynamics"
+   ]
+  },
+  {
+   "name": "Biology",
+   "videos": 0,
+   "notes": 35,
+   "chapters": [
+    "Biomolecules and Cell Biology",
+    "Floral Diversity",
+    "Introductory Microbiology",
+    "Ecology",
+    "Vegetation",
+    "Introduction to Biology",
+    "Evolutionary Biology",
+    "Faunal Diversity",
+    "Biota and Environment",
+    "Conservation Biology"
+   ]
+  },
+  {
+   "name": "Computer Science",
+   "videos": 9,
+   "notes": 8,
+   "chapters": [
+    "Computer System",
+    "Number System & Boolean Logic",
+    "Computer Software & Operating System",
+    "Application Package",
+    "Programming Concepts & Logics",
+    "Web Technology I",
+    "Multimedia",
+    "Information Security and Cyber Law"
+   ]
+  },
+  {
+   "name": "English",
+   "videos": 0,
+   "notes": 20,
+   "chapters": [
+    "Grammar and Vocabulary",
+    "Writing",
+    "Comprehension"
+   ]
+  },
+  {
+   "name": "नेपाली",
+   "videos": 0,
+   "notes": 12,
+   "chapters": [
+    "वीर पुर्खा",
+    "गाउँको माया",
+    "संस्कृतिको नयाँ यात्रा",
+    "योगमाया",
+    "साथीलाई चिठी",
+    "त्यो फेरी फर्कला?",
+    "पर्यापर्यटनका सम्भावना र आयाम",
+    "लौ आयो ताजा खबर",
+    "सफलताको कथा",
+    "कृषिशालामा एक दिन",
+    "रारा भ्रमण",
+    "जलस्रोत र उर्जा"
+   ]
+  }
+ ],
+ "class-11/management": [
+  {
+   "name": "Principles of Accounting",
+   "videos": 8,
+   "notes": 25,
+   "chapters": [
+    "Theoretical Concept of Accounting",
+    "Generally Accepted Accounting Principles (GAAP)",
+    "Basic Accounting Terminologies and Double Entry Bookkeeping System",
+    "Recording Transaction",
+    "Subsidiary Book",
+    "Ledger and Trial Balance",
+    "Cash Book",
+    "Modern Banking System and Bank Reconciliation Statement",
+    "Journal Proper and Adjusted Trial Balance",
+    "Accounting Errors",
+    "Accounting of Fixed Assets",
+    "Accounting of Reserves and Provisions",
+    "Capital and Revenue Concept",
+    "Preparation of Financial Statement of Sole Trading and Partnership Firm",
+    "Preparation of Financial Statement Under Modern Methods",
+    "Accounting for Non-profit Organization",
+    "Single and Double Entry System",
+    "Government Accounting in Nepal",
+    "Journal Voucher",
+    "Bank Cash Book",
+    "Budget Sheet",
+    "Statement of Expenditure"
+   ]
+  },
+  {
+   "name": "Economics",
+   "videos": 0,
+   "notes": 15,
+   "chapters": [
+    "Basic Concept of Economics and Allocation of Resources",
+    "Demand, Supply and Market Equilibrium",
+    "Elasticity of Demand and Supply",
+    "Consumer's Behavior",
+    "Theory of Production",
+    "Meaning of Macro Economics",
+    "National Income Accounting",
+    "Money and Inflation",
+    "Economic Development, Growth and Capital Formation",
+    "Review of the Economy of Nepal",
+    "Natural Resources of Nepal",
+    "Agriculture",
+    "Manufacturing and Tourism Industry in Nepal",
+    "Transportation and Communication",
+    "Basic Mathematics"
+   ]
+  },
+  {
+   "name": "Mathematics",
+   "videos": 11,
+   "notes": 23,
+   "chapters": [
+    "Logic, Sets and Real Number System",
+    "Function",
+    "Curve Sketching",
+    "Sequence and Series",
+    "Matrix and Determinants",
+    "Quadratic Equations",
+    "Complex Numbers",
+    "Inverse Circular Function and Trigonometric Equation",
+    "Analytic Geometry",
+    "Pair of Straight Lines",
+    "Coordinates in Space",
+    "Vectors",
+    "Measures of Dispersion",
+    "Probability",
+    "Limits and Continuity",
+    "The Derivatives",
+    "Application of Derivatives",
+    "Antiderivative",
+    "Numerical Computation",
+    "Numerical Integration",
+    "Statics",
+    "Dynamics"
+   ]
+  },
+  {
+   "name": "Computer Science",
+   "videos": 4,
+   "notes": 8,
+   "chapters": [
+    "Computer System",
+    "Number System & Boolean Logic",
+    "Computer Software & Operating System",
+    "Application Package",
+    "Programming Concepts & Logics",
+    "Web Technology I",
+    "Multimedia",
+    "Information Security and Cyber Law"
+   ]
+  },
+  {
+   "name": "सामाजिक अध्ययन तथा जीवनोपयोगी शिक्षा",
+   "videos": 6,
+   "notes": 53,
+   "chapters": [
+    "सामाजिक तथा जीवनोपयोगी शिक्षाको अवधारणा",
+    "जीवनोपयोगी सिपको रूपमा डिजिटल सिपहरू तथा सामान्य अनुसन्धान सिप",
+    "जीवनोपयोगी सिप",
+    "मानव तथा समाजको उद्भव र विकास",
+    "भूगोल र सामाजिक सम्बन्ध",
+    "विश्वको इतिहास",
+    "सामाजिक पहिचान, विविधता र वर्ग विभाजन",
+    "संविधान र नागरिक सचेतना",
+    "बस्ती, जनसङ्ख्या र विकास",
+    "अर्थतन्त्र र विकास",
+    "स्वास्थ्य सेवा र सामाजिक विकास"
+   ]
+  },
+  {
+   "name": "English",
+   "videos": 1,
+   "notes": 20,
+   "chapters": [
+    "Grammar and Vocabulary",
+    "Writing",
+    "Comprehension"
+   ]
+  },
+  {
+   "name": "नेपाली",
+   "videos": 1,
+   "notes": 12,
+   "chapters": [
+    "वीर पुर्खा",
+    "गाउँको माया",
+    "संस्कृतिको नयाँ यात्रा",
+    "योगमाया",
+    "साथीलाई चिठी",
+    "त्यो फेरी फर्कला?",
+    "पर्यापर्यटनका सम्भावना र आयाम",
+    "लौ आयो ताजा खबर",
+    "सफलताको कथा",
+    "कृषिशालामा एक दिन",
+    "रारा भ्रमण",
+    "जलस्रोत र उर्जा"
+   ]
+  }
+ ],
+ "class-12/science": [
+  {
+   "name": "Physics",
+   "videos": 13,
+   "notes": 27,
+   "chapters": [
+    "Rotational dynamics",
+    "Periodic Motion",
+    "Fluid Statics",
+    "First Law of Thermodynamics",
+    "Second Law of Thermodynamics",
+    "Wave Motion",
+    "Mechanical Wave",
+    "Wave in Pipes and Strings",
+    "Acoustic Phenomena",
+    "Nature and Propagation of Light",
+    "Interference",
+    "Diffraction",
+    "Polarization",
+    "Electric Circuit",
+    "Thermoelectric Effect",
+    "Magnetic Field",
+    "Magnetic Properties and Materials",
+    "Electromagnetic Induction",
+    "Alternating Current",
+    "Electrons",
+    "Photons",
+    "Semiconductor Devices",
+    "Quantization of Energy",
+    "Radioactivity and Nuclear Reaction",
+    "Recent Trends in Physics"
+   ]
+  },
+  {
+   "name": "Chemistry",
+   "videos": 12,
+   "notes": 30,
+   "chapters": [
+    "Volumetric Analysis",
+    "Ionic Equilibrium",
+    "Chemical Kinetics",
+    "Thermodynamics",
+    "Electrochemistry",
+    "Transition Metals",
+    "Studies of Heavy Metals",
+    "Haloalkanes",
+    "Haloarenes",
+    "Alcohols",
+    "Phenols",
+    "Ethers",
+    "Aldehydes and Ketones",
+    "Carboxylic Acid and Its Derivatives",
+    "Nitro Compounds",
+    "Amino Compounds",
+    "Organometallic Compounds",
+    "Chemistry in the Service of Mankind",
+    "Cement",
+    "Paper and Pulp",
+    "Nuclear Chemistry and Applications of Radioactivity"
+   ]
+  },
+  {
+   "name": "Mathematics",
+   "videos": 12,
+   "notes": 19,
+   "chapters": [
+    "Permutation and Combination",
+    "Binomial Theorem",
+    "Complex Number",
+    "Sequence and Series",
+    "Matrix Based System of Linear Equations",
+    "Properties of Triangle",
+    "Solution of Triangle",
+    "Conic Section",
+    "Product of Vectors",
+    "Correlation and Regression",
+    "Probability",
+    "Derivatives",
+    "Application of Derivatives",
+    "Antiderivative",
+    "Differential Equations",
+    "System of Linear Equations",
+    "Linear Programming",
+    "Statics",
+    "Dynamics: Newton's Law of Motion and Projectile"
+   ]
+  },
+  {
+   "name": "Biology",
+   "videos": 0,
+   "notes": 22,
+   "chapters": [
+    "Plant Anatomy",
+    "Plant Physiology",
+    "Genetics",
+    "Embryology",
+    "Biotechnology",
+    "Animal Tissues",
+    "Development Biology",
+    "Human Biology",
+    "Human Population and Health Disorders",
+    "Applied Biology"
+   ]
+  },
+  {
+   "name": "Computer Science",
+   "videos": 2,
+   "notes": 7,
+   "chapters": [
+    "Database Management System (DBMS)",
+    "Data Communication and Networking",
+    "Web Technology II",
+    "Programming Concept",
+    "Object-Oriented Programming (OOP)",
+    "Software Process Model (SPM)",
+    "Recent Trends in Technology"
+   ]
+  },
+  {
+   "name": "English",
+   "videos": 0,
+   "notes": 20,
+   "chapters": [
+    "Writing",
+    "Grammar and Vocabulary",
+    "Comprehension"
+   ]
+  },
+  {
+   "name": "नेपाली",
+   "videos": 0,
+   "notes": 12,
+   "chapters": [
+    "आमाको सपना",
+    "विरहिणी दमयन्ती",
+    "घनघस्याको उकालो काट्ता",
+    "व्यावसायिक पत्र",
+    "एक चिहान",
+    "स्टिफन विलियम हकिङ",
+    "हामीलाई बोलाउँछन् हिमचुली",
+    "मातृत्व",
+    "गोर्खे",
+    "नेपाली पहिचान",
+    "सहकारी",
+    "जीवन मार्ग"
+   ]
+  }
+ ],
+ "class-12/management": [
+  {
+   "name": "Principles of Accounting",
+   "videos": 9,
+   "notes": 20,
+   "chapters": [
+    "1.1 Company Formation",
+    "1.2 Issue of Share for Cash",
+    "1.3 Forfeiture and Re-issue of Share",
+    "1.4 Issue of Share for Other than Cash",
+    "1.5 Accounting for Debenture",
+    "2.1 Final Account of a Company (Traditional Method)",
+    "2.2 Financial Statement (Modern Method)",
+    "2.3 The Work Sheet",
+    "2.4 Cash Flow Statement",
+    "3.1 Cost Accounting",
+    "3.2 Cost Concept and Classification",
+    "3.3 Accounting for Materials and Control",
+    "3.4 Inventory Management",
+    "3.5 Accounting for Labor",
+    "3.6 Accounting for Overheads",
+    "3.7 Unit or Output Costing",
+    "3.8 Cost Reconciliation Statement",
+    "4.1 Computer System in Accounting",
+    "4.2 Accounting Record in Excel"
+   ]
+  },
+  {
+   "name": "Economics",
+   "videos": 0,
+   "notes": 16,
+   "chapters": [
+    "Basic Concept of Economics and Allocation of Resources",
+    "Market and Revenue",
+    "Cost Curves",
+    "Theory of Prices and Output Determination",
+    "Factor Pricing (Pricing of Factors of Production)",
+    "Banking and Monetary Policy",
+    "Government Finance",
+    "International Trade",
+    "Poverty, Inequality, Unemployment and Human Resource",
+    "Nepalese Foreign Trade and Foreign Employment",
+    "Development Planning in Nepal",
+    "Sustainable Development Goals and Nepal",
+    "Introduction to Statistics",
+    "Data Collection",
+    "Measure of Dispersion",
+    "Index Number"
+   ]
+  },
+  {
+   "name": "Mathematics",
+   "videos": 13,
+   "notes": 19,
+   "chapters": [
+    "Permutation and Combination",
+    "Binomial Theorem",
+    "Complex Number",
+    "Sequence and Series",
+    "Matrix Based System of Linear Equations",
+    "Properties of Triangle",
+    "Solution of Triangle",
+    "Conic Section",
+    "Product of Vectors",
+    "Correlation and Regression",
+    "Probability",
+    "Derivatives",
+    "Application of Derivatives",
+    "Antiderivative",
+    "Differential Equations",
+    "System of Linear Equations",
+    "Linear Programming",
+    "Statics",
+    "Dynamics: Newton's Law of Motion and Projectile"
+   ]
+  },
+  {
+   "name": "Computer Science",
+   "videos": 7,
+   "notes": 7,
+   "chapters": [
+    "Database Management System (DBMS)",
+    "Data Communication and Networking",
+    "Web Technology",
+    "Programming Concept",
+    "Object-Oriented Programming (OOP)",
+    "Software Process Model (SPM)",
+    "Recent Trends in Technology"
+   ]
+  },
+  {
+   "name": "सामाजिक अध्ययन तथा जीवनोपयोगी",
+   "videos": 12,
+   "notes": 73,
+   "chapters": [
+    "सामाजिक तथा जीवनोपयोगी शिक्षाको अवधारणा",
+    "जीवनोपयोगी सिपका रूपमा डिजिटल सिपहरू तथा सामान्य अनुसन्धान सिपहरू",
+    "जीवनोपयोगी सिप",
+    "समाजको विकास र दर्शन",
+    "भूगोल र सामाजिक जीवन",
+    "नेपालको इतिहास",
+    "सामाजिक पहिचान र विविधता",
+    "संविधान र नागरिक सचेतना",
+    "सहरीकरण र बसाइँसराइ",
+    "अर्थतन्त्र र विकास",
+    "शिक्षा र सामाजिक विकास"
+   ]
+  },
+  {
+   "name": "English",
+   "videos": 2,
+   "notes": 20,
+   "chapters": [
+    "Writing",
+    "Grammar and Vocabulary",
+    "Comprehension"
+   ]
+  },
+  {
+   "name": "नेपाली",
+   "videos": 0,
+   "notes": 12,
+   "chapters": [
+    "आमाको सपना",
+    "विरहिणी दमयन्ती",
+    "घनघस्याको उकालो काट्ता",
+    "व्यावसायिक पत्र",
+    "एक चिहान",
+    "स्टिफन विलियम हकिङ",
+    "हामीलाई बोलाउँछन् हिमचुली",
+    "मातृत्व",
+    "गोर्खे",
+    "नेपाली पहिचान",
+    "सहकारी",
+    "जीवन मार्ग"
+   ]
+  }
+ ]
+}

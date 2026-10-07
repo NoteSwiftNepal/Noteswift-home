@@ -84,6 +84,11 @@ const en = {
     title: "Find your class.",
     lead: "Courses organised by class, stream and medium.",
     all: "See all courses",
+    view: "Explore {class}",
+    tabs: { overview: "Overview", curriculum: "Curriculum" },
+    included: "Included in every course",
+    features: ["Recorded video lessons", "Live classes", "Chapter-wise notes", "Chapter MCQs and tests", "Model sets with solutions", "Ask SikAI any time"],
+    totals: { subjects: "Subjects", chapters: "Chapters", videos: "Video lessons", notes: "Notes" },
   },
   schools: {
     title: "Bring Note Swift to your school.",
@@ -200,6 +205,11 @@ const ne: HomeCopy = {
     title: "आफ्नो कक्षा खोज्नुहोस्।",
     lead: "कक्षा, संकाय र माध्यम अनुसार व्यवस्थित कोर्सहरू।",
     all: "सबै कोर्स हेर्नुहोस्",
+    view: "{class} हेर्नुहोस्",
+    tabs: { overview: "सारांश", curriculum: "पाठ्यक्रम" },
+    included: "हरेक कोर्समा समावेश",
+    features: ["रेकर्ड गरिएका भिडियो पाठ", "लाइभ कक्षा", "अध्याय अनुसार नोट्स", "अध्याय MCQ र परीक्षा", "समाधानसहित मोडेल सेट", "जुनसुकै बेला SikAI लाई सोध्नुहोस्"],
+    totals: { subjects: "विषय", chapters: "अध्याय", videos: "भिडियो पाठ", notes: "नोट्स" },
   },
   schools: {
     title: "Note Swift लाई आफ्नो विद्यालयमा ल्याउनुहोस्।",

@@ -21,6 +21,7 @@ import NepalMap from "@/components/sections/NepalMap";
 import EcosystemOrbit from "@/components/sections/EcosystemOrbit";
 import StatsBand from "@/components/sections/StatsBand";
 import Stories from "@/components/sections/Stories";
+import ClassPicker from "@/components/sections/ClassPicker";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]">) {
   const lang = (await params).lang as Locale;
@@ -112,6 +113,19 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
             );
           })}
         </ul>
+      </section>
+
+      {/* ---------- Find your class ---------- */}
+      <section className="container-site mt-24">
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <Heading title={t.courses.title} lead={t.courses.lead} />
+          <Reveal>
+            <Button href={L("/courses")} variant="secondary">{t.courses.all}</Button>
+          </Reveal>
+        </div>
+        <Reveal className="mt-12">
+          <ClassPicker courses={courses[lang]} hrefs={courses[lang].map((k) => L(`/courses/${k.slug}`))} t={t.courses} locale={lang === "ne" ? "ne-NP" : "en-US"} />
+        </Reveal>
       </section>
 
       {/* ---------- Ecosystem orbit ---------- */}
@@ -209,34 +223,6 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
             </Reveal>
           ))}
         </ol>
-      </section>
-
-      {/* ---------- Courses ---------- */}
-      <section className="container-site mt-32">
-        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-          <Heading title={t.courses.title} lead={t.courses.lead} />
-          <Reveal>
-            <Button href={L("/courses")} variant="secondary">{t.courses.all}</Button>
-          </Reveal>
-        </div>
-        <ul className="mt-12 divide-y divide-line border-y border-line">
-          {courses[lang].map((course, i) => (
-            <Reveal as="li" key={course.slug} delay={i * 80}>
-              <Link href={L(`/courses/${course.slug}`)} className="group grid items-center gap-3 py-8 md:grid-cols-[14rem_1fr_auto] md:gap-10">
-                <span className="flex items-baseline gap-3">
-                  <span className="text-[28px] font-semibold tracking-[-0.03em] transition-colors group-hover:text-brand">{course.label}</span>
-                  <span className="rounded-full bg-brand-soft px-2.5 py-0.5 text-[12px] font-medium text-brand">{course.short}</span>
-                </span>
-                <span className="text-[15px] text-muted">
-                  <span className="text-ink">{course.title}</span> {course.tracks.map((tr) => tr.name).join(", ")}. {course.syllabus}.
-                </span>
-                <span className="flex size-11 items-center justify-center rounded-full border border-line transition-all duration-300 group-hover:border-brand group-hover:bg-brand group-hover:text-on-brand">
-                  <ArrowRight aria-hidden size={16} />
-                </span>
-              </Link>
-            </Reveal>
-          ))}
-        </ul>
       </section>
 
       {/* ---------- Schools ---------- */}
