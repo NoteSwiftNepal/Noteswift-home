@@ -15,14 +15,24 @@ const en = {
   },
   proof: ["NEB curriculum", "CDC syllabus", "Nepali and English medium", "Android app on Google Play"],
   ecosystem: {
-    title: "One platform for everyone behind a student.",
-    lead: "Note Swift has a dedicated app for each person involved in learning, all working from the same data.",
-    cells: {
-      student: { title: "Students", body: "Learn, practise and track progress from one app.", link: "Open student app" },
-      parent: { title: "Parents", body: "See attendance, tests and progress without guessing.", link: "Parent portal" },
-      teacher: { title: "Teachers", body: "Run classes, share resources and check work faster.", link: "Teacher portal" },
-      school: { title: "Schools", body: "Attendance, results and reports across every class.", link: "School portal" },
-    },
+    eyebrow: "The ecosystem",
+    title: "One ecosystem. Built around learning.",
+    lead: "Note Swift is more than a course or a video library. It connects everyone and everything a student's learning depends on.",
+    center: "Note Swift",
+    select: "Show",
+    nodes: [
+      { key: "students", label: "Students", body: "Lessons, notes, tests and SikAI in one app, chapter by chapter.", link: "Open student app" },
+      { key: "parents", label: "Parents", body: "Attendance, results and progress, visible without guessing.", link: "Parent portal" },
+      { key: "schools", label: "Schools", body: "Digital tools that support the classroom, not replace it.", link: "School portal" },
+      { key: "teachers", label: "Teachers", body: "Run live classes, share resources and check work faster.", link: "Teacher portal" },
+      { key: "content", label: "Content", body: "Video lessons and notes mapped to the NEB and CDC syllabus.", link: "Browse courses" },
+      { key: "technology", label: "Technology", body: "One shared platform, so every app works from the same data.", link: "See all features" },
+    ],
+  },
+  stats: {
+    title: "Growing every day.",
+    sub: "Built one lesson, one student, one school at a time.",
+    items: { videos: "Learning videos", resources: "Learning resources", students: "Students reached", schools: "Schools and communities" },
   },
   features: {
     title: "Everything a chapter needs, in one place.",
@@ -81,6 +91,21 @@ const en = {
     secondary: "How partnership works",
     features: ["Attendance", "Assignments", "Online tests", "Reports"],
   },
+  // TODO: placeholder quotes. Replace with real, consented student testimonials before launch.
+  stories: {
+    eyebrow: "Student stories",
+    title: "In their own words.",
+    prev: "Previous story",
+    next: "Next story",
+    items: [
+      { quote: "I used to watch random videos and still feel lost. Having lessons, notes and questions for each chapter in one place made my revision a lot calmer.", name: "Aayusha Shrestha", role: "Class 12 Science, Kathmandu" },
+      { quote: "SikAI explains the steps instead of giving me the answer. Now I can solve the next physics numerical on my own.", name: "Bibek Thapa", role: "Class 11 Science, Pokhara" },
+      { quote: "The chapter tests feel like the real SEE paper. I finally knew which topics to revise before the exam.", name: "Sarita Chaudhary", role: "Class 10, Dhangadhi" },
+      { quote: "I download lessons at school and watch them at home where the internet is slow. That alone changed how much I study.", name: "Rojan Magar", role: "Class 10, Gorkha" },
+      { quote: "Accounts finally makes sense. The teacher goes slowly and the notes match exactly what we study in class.", name: "Prasansa Karki", role: "Class 12 Management, Biratnagar" },
+      { quote: "Live classes in the evening fit around my tuition. If I miss one, the recording is there the next morning.", name: "Nischal Adhikari", role: "Class 11 Science, Butwal" },
+    ],
+  },
   final: {
     title: "Start with one chapter.",
     lead: "See how much easier it gets.",
@@ -106,14 +131,24 @@ const ne: HomeCopy = {
   },
   proof: ["NEB पाठ्यक्रम", "CDC पाठ्यक्रम", "नेपाली र अंग्रेजी माध्यम", "Google Play मा एन्ड्रोइड एप"],
   ecosystem: {
-    title: "विद्यार्थीको पछाडि रहने सबैका लागि एउटै प्लेटफर्म।",
-    lead: "सिकाइमा संलग्न हरेक व्यक्तिका लागि Note Swift मा छुट्टै एप छ, र सबैले एउटै डाटाबाट काम गर्छन्।",
-    cells: {
-      student: { title: "विद्यार्थी", body: "एउटै एपबाट सिक्नुहोस्, अभ्यास गर्नुहोस् र प्रगति हेर्नुहोस्।", link: "विद्यार्थी एप खोल्नुहोस्" },
-      parent: { title: "अभिभावक", body: "हाजिरी, परीक्षा र प्रगति अनुमान नगरी हेर्नुहोस्।", link: "अभिभावक पोर्टल" },
-      teacher: { title: "शिक्षक", body: "कक्षा चलाउनुहोस्, सामग्री बाँड्नुहोस् र काम छिटो जाँच्नुहोस्।", link: "शिक्षक पोर्टल" },
-      school: { title: "विद्यालय", body: "हरेक कक्षाको हाजिरी, नतिजा र रिपोर्ट।", link: "विद्यालय पोर्टल" },
-    },
+    eyebrow: "इकोसिस्टम",
+    title: "एउटै इकोसिस्टम। सिकाइको वरिपरि बनेको।",
+    lead: "Note Swift केवल कोर्स वा भिडियो लाइब्रेरी होइन। यसले विद्यार्थीको सिकाइ निर्भर हुने सबैलाई र सबै कुरालाई जोड्छ।",
+    center: "Note Swift",
+    select: "हेर्नुहोस्",
+    nodes: [
+      { key: "students", label: "विद्यार्थी", body: "पाठ, नोट्स, परीक्षा र SikAI एउटै एपमा, अध्याय अनुसार।", link: "विद्यार्थी एप खोल्नुहोस्" },
+      { key: "parents", label: "अभिभावक", body: "हाजिरी, नतिजा र प्रगति अनुमान नगरी हेर्नुहोस्।", link: "अभिभावक पोर्टल" },
+      { key: "schools", label: "विद्यालय", body: "कक्षाकोठालाई सहयोग गर्ने डिजिटल उपकरण, विस्थापन गर्ने होइन।", link: "विद्यालय पोर्टल" },
+      { key: "teachers", label: "शिक्षक", body: "लाइभ कक्षा चलाउनुहोस्, सामग्री बाँड्नुहोस् र काम छिटो जाँच्नुहोस्।", link: "शिक्षक पोर्टल" },
+      { key: "content", label: "सामग्री", body: "NEB र CDC पाठ्यक्रम अनुसारका भिडियो पाठ र नोट्स।", link: "कोर्सहरू हेर्नुहोस्" },
+      { key: "technology", label: "प्रविधि", body: "एउटै साझा प्लेटफर्म, त्यसैले हरेक एप एउटै डाटाबाट चल्छ।", link: "सबै सुविधा हेर्नुहोस्" },
+    ],
+  },
+  stats: {
+    title: "हरेक दिन बढ्दै।",
+    sub: "एक पाठ, एक विद्यार्थी, एक विद्यालय गर्दै बनेको।",
+    items: { videos: "सिकाइ भिडियो", resources: "सिकाइ सामग्री", students: "विद्यार्थीसम्म पुगेको", schools: "विद्यालय र समुदाय" },
   },
   features: {
     title: "एउटा अध्यायलाई चाहिने सबै कुरा, एकै ठाउँमा।",
@@ -171,6 +206,20 @@ const ne: HomeCopy = {
     lead: "प्रमुख र शिक्षकका लागि हाजिरी, असाइनमेन्ट, परीक्षा र रिपोर्ट, अनि हरेक विद्यार्थीका लागि विद्यार्थी एप।",
     secondary: "साझेदारी कसरी हुन्छ",
     features: ["हाजिरी", "असाइनमेन्ट", "अनलाइन परीक्षा", "रिपोर्ट"],
+  },
+  stories: {
+    eyebrow: "विद्यार्थीका अनुभव",
+    title: "उनीहरूकै शब्दमा।",
+    prev: "अघिल्लो अनुभव",
+    next: "अर्को अनुभव",
+    items: [
+      { quote: "पहिले म जुनसुकै भिडियो हेर्थें र अझै अलमलिन्थें। हरेक अध्यायका पाठ, नोट्स र प्रश्न एकै ठाउँमा हुँदा मेरो दोहोर्याइ धेरै सजिलो भयो।", name: "आयुषा श्रेष्ठ", role: "कक्षा १२ विज्ञान, काठमाडौं" },
+      { quote: "SikAI ले उत्तर मात्र दिँदैन, चरणहरू बुझाउँछ। अब अर्को भौतिकशास्त्रको प्रश्न म आफैं हल गर्न सक्छु।", name: "बिबेक थापा", role: "कक्षा ११ विज्ञान, पोखरा" },
+      { quote: "अध्याय परीक्षा साँच्चिकै SEE को प्रश्नपत्र जस्तै लाग्छ। परीक्षाअघि के दोहोर्याउने भनेर अन्ततः थाहा भयो।", name: "सरिता चौधरी", role: "कक्षा १०, धनगढी" },
+      { quote: "म विद्यालयमै पाठ डाउनलोड गर्छु र इन्टरनेट ढिलो हुने घरमा हेर्छु। यसैले मेरो पढाइ धेरै बदलियो।", name: "रोजन मगर", role: "कक्षा १०, गोरखा" },
+      { quote: "लेखा अब बल्ल बुझिन्छ। शिक्षक बिस्तारै पढाउनुहुन्छ र नोट्स कक्षामा पढ्ने कुरासँग ठ्याक्कै मिल्छ।", name: "प्रशंसा कार्की", role: "कक्षा १२ व्यवस्थापन, विराटनगर" },
+      { quote: "बेलुकीको लाइभ कक्षा मेरो ट्युसनसँग मिल्छ। छुटे भने भोलिपल्ट बिहान रेकर्डिङ हुन्छ।", name: "निश्चल अधिकारी", role: "कक्षा ११ विज्ञान, बुटवल" },
+    ],
   },
   final: {
     title: "एउटा अध्यायबाट सुरु गर्नुहोस्।",

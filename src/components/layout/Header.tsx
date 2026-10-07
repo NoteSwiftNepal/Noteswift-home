@@ -43,7 +43,7 @@ export default function Header({ lang, t }: { lang: Locale; t: CommonCopy }) {
 
   return (
     <header className="sticky top-0 z-50 px-3 pt-3">
-      <div className="glass glass-nav mx-auto flex h-14 max-w-[78rem] items-center justify-between gap-4 rounded-full pl-5 pr-2">
+      <div className="glass glass-nav mx-auto flex h-14 max-w-[78rem] items-center justify-between gap-4 rounded-xl pl-5 pr-2">
         <Link href={L("/")} aria-label={t.homeLabel} className="shrink-0 rounded-full">
           <Logo />
         </Link>
@@ -70,7 +70,7 @@ export default function Header({ lang, t }: { lang: Locale; t: CommonCopy }) {
                     open === i ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0"
                   }`}
                 >
-                  <ul className="glass glass-nav rounded-[1.25rem] p-2">
+                  <ul className="glass glass-nav rounded-xl p-2">
                     {group.items.map((item) => (
                       <li key={item.href}>
                         <Link
@@ -130,7 +130,7 @@ export default function Header({ lang, t }: { lang: Locale; t: CommonCopy }) {
       {/* Mobile sheet */}
       <div
         id="mobile-menu"
-        className={`fixed inset-x-3 bottom-3 top-[4.75rem] z-40 overflow-y-auto rounded-[1.5rem] transition-all duration-300 ease-[var(--ease-out-soft)] lg:hidden glass glass-nav ${
+        className={`fixed inset-x-3 bottom-3 top-[4.75rem] z-40 overflow-y-auto rounded-xl transition-all duration-300 ease-[var(--ease-out-soft)] lg:hidden glass glass-nav ${
           mobile ? "visible translate-y-0 opacity-100" : "invisible -translate-y-2 opacity-0"
         }`}
       >

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
-  ArrowRight, ArrowUpRight, Books, Certificate, Translate, GooglePlayLogo, Student, UsersThree, ChalkboardTeacher,
-  Buildings, Circle, CheckCircle,
+  ArrowRight, Books, Certificate, Translate, GooglePlayLogo, Circle, CheckCircle,
 } from "@phosphor-icons/react/dist/ssr";
 import type { Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
@@ -15,10 +14,13 @@ import Heading from "@/components/ui/Heading";
 import Reveal from "@/components/ui/Reveal";
 import CtaBand from "@/components/ui/CtaBand";
 import Phone from "@/components/phone/Phone";
-import { HomeScreen, LearnScreen, LessonScreen, TestScreen, SikaiChatScreen, SikaiWelcomeScreen, ProgressScreen, PlayStoreScreen } from "@/components/phone/screens";
+import { HomeScreen, LearnScreen, LessonScreen, TestScreen, SikaiChatScreen, SikaiWelcomeScreen, ProgressScreen } from "@/components/phone/screens";
 import ScreenCycle from "@/components/phone/ScreenCycle";
 import ScreenShowcase from "@/components/sections/ScreenShowcase";
 import NepalMap from "@/components/sections/NepalMap";
+import EcosystemOrbit from "@/components/sections/EcosystemOrbit";
+import StatsBand from "@/components/sections/StatsBand";
+import Stories from "@/components/sections/Stories";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]">) {
   const lang = (await params).lang as Locale;
@@ -112,61 +114,21 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </ul>
       </section>
 
-      {/* ---------- Ecosystem bento ---------- */}
+      {/* ---------- Ecosystem orbit ---------- */}
       <section className="container-site mt-28">
-        <Heading title={t.ecosystem.title} lead={t.ecosystem.lead} />
-        <div className="mt-14 grid gap-4 md:grid-cols-6 md:grid-rows-[auto_auto]">
-          <Reveal className="relative overflow-hidden rounded-[1.25rem] border border-line bg-surface p-8 md:col-span-4 md:row-span-2 md:min-h-[30rem]">
-            <Student aria-hidden size={28} className="text-brand" />
-            <h3 className="t-h3 mt-5">{t.ecosystem.cells.student.title}</h3>
-            <p className="mt-2 max-w-xs text-muted">{t.ecosystem.cells.student.body}</p>
-            <a href={site.portals.student} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center gap-1.5 text-[15px] font-medium text-brand hover:underline">
-              {t.ecosystem.cells.student.link} <ArrowUpRight aria-hidden size={14} />
-            </a>
-            <div aria-hidden className="pointer-events-none absolute -bottom-48 right-6 hidden sm:block lg:right-14">
-              <Phone label="" scale={0.62}>
-                <PlayStoreScreen />
-              </Phone>
-            </div>
-            <div className="mx-auto mt-10 h-72 overflow-hidden sm:hidden">
-              <Phone label="Note Swift on Google Play" scale={0.62}>
-                <PlayStoreScreen />
-              </Phone>
-            </div>
-          </Reveal>
-          {(
-            [
-              ["parent", UsersThree, site.portals.parent, "bg-surface"],
-              ["teacher", ChalkboardTeacher, site.portals.teacher, "bg-brand-soft"],
-            ] as const
-          ).map(([k, Icon, href, bg], i) => (
-            <Reveal key={k} delay={(i + 1) * 80} className={`rounded-[1.25rem] border border-line p-7 md:col-span-2 ${bg}`}>
-              <Icon aria-hidden size={26} className="text-brand" />
-              <h3 className="t-h3 mt-4">{t.ecosystem.cells[k].title}</h3>
-              <p className="mt-2 text-[15px] text-muted">{t.ecosystem.cells[k].body}</p>
-              <a href={href} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-1.5 text-[15px] font-medium text-brand hover:underline">
-                {t.ecosystem.cells[k].link} <ArrowUpRight aria-hidden size={14} />
-              </a>
-            </Reveal>
-          ))}
-          <Reveal delay={240} className="relative overflow-hidden rounded-[1.25rem] bg-[linear-gradient(135deg,#003f73,#0078d6)] p-7 text-white md:col-span-6">
-            <div aria-hidden className="pointer-events-none absolute -right-20 -top-24 size-80 rounded-full bg-white/10 blur-3xl" />
-            <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-              <div>
-                <Buildings aria-hidden size={26} />
-                <h3 className="t-h3 mt-4">{t.ecosystem.cells.school.title}</h3>
-                <p className="mt-2 max-w-md text-[15px] text-white/80">{t.ecosystem.cells.school.body}</p>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                <Button href={L("/schools")} variant="light">{c.cta.schools}</Button>
-                <a href={site.portals.school} target="_blank" rel="noopener noreferrer" className="press inline-flex h-12 items-center gap-2 rounded-full border border-white/30 px-6 text-[15px] font-medium text-white hover:bg-white/10">
-                  {t.ecosystem.cells.school.link} <ArrowUpRight aria-hidden size={14} />
-                </a>
-              </div>
-            </div>
-          </Reveal>
+        <Heading eyebrow={t.ecosystem.eyebrow} title={t.ecosystem.title} lead={t.ecosystem.lead} />
+        <div className="mt-14">
+          <EcosystemOrbit
+            nodes={t.ecosystem.nodes}
+            hrefs={[site.portals.student, site.portals.parent, site.portals.school, site.portals.teacher, L("/courses"), L("/features")]}
+            center={t.ecosystem.center}
+            select={t.ecosystem.select}
+          />
         </div>
       </section>
+
+      {/* ---------- Live platform stats ---------- */}
+      <StatsBand t={t.stats} locale={lang === "ne" ? "ne-NP" : "en-US"} />
 
       {/* ---------- Feature showcase with real app screens ---------- */}
       <section className="mt-32 bg-surface-2 py-24 md:py-28 lg:bg-surface-2/60">
@@ -304,6 +266,8 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         <Button href={site.appUrl}>{c.cta.start}</Button>
         <Button href={site.playStore} variant="secondary">{c.cta.app}</Button>
       </CtaBand>
+
+      <Stories t={t.stories} />
     </>
   );
 }
