@@ -4,6 +4,7 @@ export const site = {
   legalName: "NoteSwift Private Limited",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://noteswift.com.np",
   appUrl: "https://student.noteswift.com.np",
+  enrollUrl: "https://web.noteswift.com.np/courses",
   portals: {
     student: "https://student.noteswift.com.np",
     teacher: "https://teacher.noteswift.com.np",

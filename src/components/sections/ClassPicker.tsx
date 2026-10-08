@@ -180,8 +180,8 @@ export default function ClassPicker({ courses, hrefs, t, locale }: { courses: Co
             </ul>
           )}
 
-          <Link href={hrefs[active]} className="press group mt-8 inline-flex h-12 items-center gap-2 rounded-full bg-ink px-6 text-[15px] font-medium text-bg hover:bg-brand hover:text-on-brand">
-            {t.view.replace("{class}", c.label)}
+          <Link href={`${hrefs[active]}/${tr.key}`} className="press group mt-8 inline-flex h-12 items-center gap-2 rounded-full bg-ink px-6 text-[15px] font-medium text-bg hover:bg-brand hover:text-on-brand">
+            {t.view.replace("{class}", `${c.label} ${tr.name}`)}
             <ArrowRight aria-hidden size={16} className="transition-transform group-hover:translate-x-1" />
           </Link>
         </div>

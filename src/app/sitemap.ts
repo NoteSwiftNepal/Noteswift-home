@@ -2,13 +2,14 @@ import type { MetadataRoute } from "next";
 import { locales } from "@/lib/i18n";
 import { absoluteUrl } from "@/lib/seo";
 import { staticRoutes } from "@/lib/routes";
-import { courseSlugs } from "@/content/courses";
+import { courseSlugs, trackParams } from "@/content/courses";
 import { posts } from "@/content/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths: { path: string; priority: number; lastModified?: string }[] = [
     ...staticRoutes.map((path) => ({ path, priority: path === "/" ? 1 : ["/privacy", "/terms", "/refund-policy"].includes(path) ? 0.3 : 0.8 })),
     ...courseSlugs.map((s) => ({ path: `/courses/${s}`, priority: 0.9 })),
+    ...trackParams.map((p) => ({ path: `/courses/${p.slug}/${p.track}`, priority: 0.9 })),
     ...posts.en.map((p) => ({ path: `/blog/${p.slug}`, priority: 0.6, lastModified: p.date })),
   ];
   return paths.flatMap(({ path, priority, lastModified }) =>

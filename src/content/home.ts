@@ -35,8 +35,9 @@ const en = {
     items: { videos: "Learning videos", resources: "Learning resources", students: "Students reached", schools: "Schools and communities" },
   },
   features: {
-    title: "Everything a chapter needs, in one place.",
-    lead: "Six tools that work together, from the first lesson to the final exam.",
+    eyebrow: "Inside Note Swift",
+    title: "Everything you need to learn better.",
+    lead: "Six tools. One app. Designed to work together, chapter by chapter.",
     items: [
       { key: "home", title: "Your day, organised", body: "Today's live classes, your batches, downloads and doubts, one tap away from the home screen." },
       { key: "learn", title: "Every subject, chapter by chapter", body: "Subjects follow your syllabus, with lessons, notes and saved material inside each one." },
@@ -45,6 +46,10 @@ const en = {
       { key: "chat", title: "Ask SikAI when you are stuck", body: "Pick a subject and module, then ask. SikAI explains the steps instead of handing you an answer." },
       { key: "progress", title: "Know exactly where you stand", body: "Tests, assignments and attendance for every subject, so you know what to revise next." },
     ],
+  },
+  fan: {
+    label: "A look inside the app",
+    tabs: ["Home", "Video lesson", "AI Partner", "Test", "Progress"],
   },
   sikai: {
     eyebrow: "SikAI",
@@ -156,8 +161,9 @@ const ne: HomeCopy = {
     items: { videos: "सिकाइ भिडियो", resources: "सिकाइ सामग्री", students: "विद्यार्थीसम्म पुगेको", schools: "विद्यालय र समुदाय" },
   },
   features: {
-    title: "एउटा अध्यायलाई चाहिने सबै कुरा, एकै ठाउँमा।",
-    lead: "पहिलो पाठदेखि अन्तिम परीक्षासम्म सँगै काम गर्ने छवटा उपकरण।",
+    eyebrow: "Note Swift भित्र",
+    title: "राम्रोसँग सिक्न चाहिने सबै कुरा।",
+    lead: "छवटा उपकरण। एउटै एप। अध्याय अनुसार सँगै काम गर्न बनाइएको।",
     items: [
       { key: "home", title: "तपाईंको दिन, व्यवस्थित", body: "आजका लाइभ कक्षा, ब्याच, डाउनलोड र जिज्ञासा, होम स्क्रिनबाट एक ट्यापमै।" },
       { key: "learn", title: "हरेक विषय, अध्याय अनुसार", body: "विषयहरू तपाईंको पाठ्यक्रम अनुसार छन्, हरेकभित्र पाठ, नोट्स र सुरक्षित सामग्री।" },
@@ -166,6 +172,10 @@ const ne: HomeCopy = {
       { key: "chat", title: "अड्किँदा SikAI लाई सोध्नुहोस्", body: "विषय र मोड्युल छान्नुहोस् अनि सोध्नुहोस्। SikAI ले सिधै उत्तर दिनुको सट्टा चरणहरू बुझाउँछ।" },
       { key: "progress", title: "आफू कहाँ छु, ठ्याक्कै थाहा पाउनुहोस्", body: "हरेक विषयको परीक्षा, असाइनमेन्ट र हाजिरी, ताकि अब के दोहोर्याउने थाहा होस्।" },
     ],
+  },
+  fan: {
+    label: "एपभित्र एक झलक",
+    tabs: ["होम", "भिडियो पाठ", "AI साथी", "परीक्षा", "प्रगति"],
   },
   sikai: {
     eyebrow: "SikAI",

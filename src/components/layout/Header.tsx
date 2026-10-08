@@ -42,8 +42,8 @@ export default function Header({ lang, t }: { lang: Locale; t: CommonCopy }) {
   const isActive = (items: { href: string }[]) => items.some((i) => path === i.href || path.startsWith(i.href + "/"));
 
   return (
-    <header className="sticky top-0 z-50 px-3 pt-3">
-      <div className="glass glass-nav mx-auto flex h-14 max-w-[78rem] items-center justify-between gap-4 rounded-xl pl-5 pr-2">
+    <header className="glass-bar sticky top-0 z-50">
+      <div className="container-site flex h-16 items-center justify-between gap-4">
         <Link href={L("/")} aria-label={t.homeLabel} className="shrink-0 rounded-full">
           <Logo />
         </Link>

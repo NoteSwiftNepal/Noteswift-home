@@ -16,7 +16,8 @@ import CtaBand from "@/components/ui/CtaBand";
 import Phone from "@/components/phone/Phone";
 import { HomeScreen, LearnScreen, LessonScreen, TestScreen, SikaiChatScreen, SikaiWelcomeScreen, ProgressScreen } from "@/components/phone/screens";
 import ScreenCycle from "@/components/phone/ScreenCycle";
-import ScreenShowcase from "@/components/sections/ScreenShowcase";
+import FeatureRail from "@/components/sections/FeatureRail";
+import PhoneFan from "@/components/sections/PhoneFan";
 import NepalMap from "@/components/sections/NepalMap";
 import EcosystemOrbit from "@/components/sections/EcosystemOrbit";
 import StatsBand from "@/components/sections/StatsBand";
@@ -144,16 +145,29 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       {/* ---------- Live platform stats ---------- */}
       <StatsBand t={t.stats} locale={lang === "ne" ? "ne-NP" : "en-US"} />
 
-      {/* ---------- Feature showcase with real app screens ---------- */}
-      <section className="mt-32 bg-surface-2 py-24 md:py-28 lg:bg-surface-2/60">
-        <div className="container-site">
-          <Heading title={t.features.title} lead={t.features.lead} />
-          <div className="mt-14">
-            <ScreenShowcase
-              items={t.features.items}
-              labels={t.features.items.map((i) => i.title)}
-              screens={[<HomeScreen key="h" />, <LearnScreen key="l" />, <LessonScreen key="v" />, <TestScreen key="t" />, <SikaiChatScreen key="c" />, <ProgressScreen key="p" />]}
-            />
+      {/* ---------- Feature cards with real app screens ---------- */}
+      <section id="features" className="container-site mt-32 scroll-mt-24">
+        <Heading eyebrow={t.features.eyebrow} title={t.features.title} lead={t.features.lead} />
+        <div className="mt-12">
+          <FeatureRail
+            items={t.features.items}
+            prev={t.stories.prev}
+            next={t.stories.next}
+            screens={[<HomeScreen key="h" />, <LearnScreen key="l" />, <LessonScreen key="v" />, <TestScreen key="t" />, <SikaiChatScreen key="c" />, <ProgressScreen key="p" />]}
+          />
+        </div>
+      </section>
+
+      {/* ---------- Fanned app screens ---------- */}
+      <section aria-label={t.fan.label} className="relative mt-28 overflow-hidden py-20 md:py-24">
+        <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(55%_60%_at_50%_55%,color-mix(in_oklab,var(--brand)_22%,transparent),transparent_75%)]" />
+        <div className="container-site relative">
+          <PhoneFan
+            tabs={t.fan.tabs}
+            screens={[<HomeScreen key="h" />, <LessonScreen key="v" />, <SikaiChatScreen key="c" />, <TestScreen key="t" />, <ProgressScreen key="p" />]}
+          />
+          <div className="mt-14 flex justify-center">
+            <Button href={site.appUrl}>{c.cta.start}</Button>
           </div>
         </div>
       </section>
@@ -225,6 +239,8 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </ol>
       </section>
 
+      <Stories t={t.stories} />
+
       {/* ---------- Schools ---------- */}
       <section className="container-site mt-32">
         <Reveal className="relative grid items-center gap-10 overflow-hidden rounded-[2rem] border border-line bg-surface p-8 md:p-14 lg:grid-cols-[1.2fr_1fr]">
@@ -252,8 +268,6 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         <Button href={site.appUrl}>{c.cta.start}</Button>
         <Button href={site.playStore} variant="secondary">{c.cta.app}</Button>
       </CtaBand>
-
-      <Stories t={t.stories} />
     </>
   );
 }

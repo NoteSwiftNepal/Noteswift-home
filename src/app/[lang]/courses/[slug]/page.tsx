@@ -4,7 +4,7 @@ import { ArrowRight, BookOpen } from "@phosphor-icons/react/dist/ssr";
 import { localePath, type Locale } from "@/lib/i18n";
 import { site } from "@/lib/site";
 import { JsonLd, faqLd, pageMetadata } from "@/lib/seo";
-import { courses, courseSlugs } from "@/content/courses";
+import { courses, courseSlugs, prices } from "@/content/courses";
 import { coursesPage } from "@/content/coursesPage";
 import { common } from "@/content/common";
 import PageHero from "@/components/ui/PageHero";
@@ -102,6 +102,16 @@ export default async function CoursePage({ params }: PageProps<"/[lang]/courses/
                   <li key={s} className="rounded-full border border-line bg-bg px-3.5 py-1.5 text-[14px] text-ink-soft">{s}</li>
                 ))}
               </ul>
+              <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6">
+                <p className="tabular-nums">
+                  <span className="block text-[13px] text-muted">{t.track.fee}</span>
+                  <span className="text-[1.75rem] font-semibold tracking-[-0.03em]">Rs {new Intl.NumberFormat(lang === "ne" ? "ne-NP" : "en-US").format(prices[`${slug}/${tr.key}`])}</span>
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Button href={localePath(lang, `/courses/${slug}/${tr.key}`)} variant="secondary" arrow={false}>{t.track.viewCourse}</Button>
+                  <Button href={site.enrollUrl}>{t.track.enroll}</Button>
+                </div>
+              </div>
             </Reveal>
           ))}
         </div>

@@ -98,3 +98,14 @@ const ne: Course[] = [
 
 export const courses: Record<Locale, Course[]> = { en, ne };
 export const courseSlugs = en.map((c) => c.slug);
+export const trackParams = en.flatMap((c) => c.tracks.map((t) => ({ slug: c.slug, track: t.key })));
+
+// NPR fees, matching the published courses in the student app (api /student/courses).
+export const prices: Record<string, number> = {
+  "see/english-medium": 3999,
+  "see/nepali-medium": 3999,
+  "class-11/science": 4999,
+  "class-11/management": 4999,
+  "class-12/science": 4999,
+  "class-12/management": 4999,
+};
