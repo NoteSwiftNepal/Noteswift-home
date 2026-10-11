@@ -1,6 +1,8 @@
 import type { Locale } from "@/lib/i18n";
+import { site } from "@/lib/site";
 
-// Course catalogue shown on the marketing site. Enrolment happens in the student app.
+// Course catalogue shown on the marketing site. Enrolment and payment happen
+// in the student web app (see enrollUrl below).
 export type Course = {
   slug: string;
   label: string;
@@ -109,3 +111,24 @@ export const prices: Record<string, number> = {
   "class-12/science": 4999,
   "class-12/management": 4999,
 };
+
+// The real course behind each track: its _id in the production database
+// (published courses from GET https://api.noteswift.com.np/api/student/courses,
+// checked 2026-10-11). If a course is deleted and re-created in the admin
+// panel its id changes, and the matching line here must be updated.
+export const courseIds: Record<string, string> = {
+  "see/english-medium": "6a439c86fd8b5ba1f5fd4f27",
+  "see/nepali-medium": "6a4e028a52ba3fd4b82956dc",
+  "class-11/science": "6a44d91f18f90365381a645d",
+  "class-11/management": "6a44d7af18f90365381a586a",
+  "class-12/science": "6a44da3018f90365381a68c4",
+  "class-12/management": "6a44d9a918f90365381a6468",
+};
+
+// "Enroll now" goes straight to the track's checkout in the web app. A
+// visitor who isn't logged in is sent to log in or register there first, then
+// brought back to this checkout.
+export function enrollUrl(slug: string, track: string): string {
+  const id = courseIds[`${slug}/${track}`];
+  return id ? `${site.appUrl}/courses/${id}/checkout` : `${site.appUrl}/courses`;
+}

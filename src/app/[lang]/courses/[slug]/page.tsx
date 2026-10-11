@@ -4,7 +4,7 @@ import { ArrowRight, BookOpen } from "@phosphor-icons/react/dist/ssr";
 import { localePath, type Locale } from "@/lib/i18n";
 import { site } from "@/lib/site";
 import { JsonLd, faqLd, pageMetadata } from "@/lib/seo";
-import { courses, courseSlugs, prices } from "@/content/courses";
+import { courses, courseSlugs, enrollUrl, prices } from "@/content/courses";
 import { coursesPage } from "@/content/coursesPage";
 import { common } from "@/content/common";
 import PageHero from "@/components/ui/PageHero";
@@ -109,7 +109,7 @@ export default async function CoursePage({ params }: PageProps<"/[lang]/courses/
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Button href={localePath(lang, `/courses/${slug}/${tr.key}`)} variant="secondary" arrow={false}>{t.track.viewCourse}</Button>
-                  <Button href={site.enrollUrl}>{t.track.enroll}</Button>
+                  <Button href={enrollUrl(slug, tr.key)}>{t.track.enroll}</Button>
                 </div>
               </div>
             </Reveal>

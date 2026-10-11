@@ -1,12 +1,16 @@
+// The student web app (login, courses, checkout). Set NEXT_PUBLIC_STUDENT_APP_URL
+// in .env (see .env.example); e.g. http://localhost:9002 to test the Enroll
+// buttons against a local web app. Read at build time.
+const studentAppUrl = (process.env.NEXT_PUBLIC_STUDENT_APP_URL || "https://student.noteswift.com.np").replace(/\/+$/, "");
+
 // Real Note Swift details, taken from the student, admin and teacher apps.
 export const site = {
   name: "Note Swift",
   legalName: "NoteSwift Private Limited",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://noteswift.com.np",
-  appUrl: "https://student.noteswift.com.np",
-  enrollUrl: "https://web.noteswift.com.np/courses",
+  appUrl: studentAppUrl,
   portals: {
-    student: "https://student.noteswift.com.np",
+    student: studentAppUrl,
     teacher: "https://teacher.noteswift.com.np",
     school: "https://school.noteswift.com.np",
     parent: "https://parent.noteswift.com.np",

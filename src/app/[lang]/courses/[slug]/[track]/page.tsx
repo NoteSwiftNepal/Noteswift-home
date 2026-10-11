@@ -4,7 +4,7 @@ import { ArrowRight, CaretDown, CheckCircle, FileText, PlayCircle } from "@phosp
 import { localePath, type Locale } from "@/lib/i18n";
 import { site } from "@/lib/site";
 import { JsonLd, faqLd, pageMetadata } from "@/lib/seo";
-import { courses, prices, trackParams } from "@/content/courses";
+import { courses, enrollUrl, prices, trackParams } from "@/content/courses";
 import { coursesPage } from "@/content/coursesPage";
 import { home } from "@/content/home";
 import catalog from "@/content/catalog.json";
@@ -49,6 +49,7 @@ export default async function TrackPage({ params }: PageProps<"/[lang]/courses/[
   const t = p.track;
   const fmt = new Intl.NumberFormat(lang === "ne" ? "ne-NP" : "en-US").format;
   const price = prices[`${slug}/${track}`];
+  const enrollHref = enrollUrl(slug, track);
   const subjects = ((catalog as Record<string, Subject[]>)[`${slug}/${track}`] ?? []) as Subject[];
   const totals = [
     [t.totals.subjects, subjects.length],
@@ -69,7 +70,7 @@ export default async function TrackPage({ params }: PageProps<"/[lang]/courses/[
     description: tr.desc,
     inLanguage: lang,
     provider: { "@id": `${site.url}/#organization` },
-    offers: { "@type": "Offer", price, priceCurrency: "NPR", category: "Paid", url: site.enrollUrl },
+    offers: { "@type": "Offer", price, priceCurrency: "NPR", category: "Paid", url: enrollHref },
     hasCourseInstance: { "@type": "CourseInstance", courseMode: "Online" },
   };
 
@@ -94,7 +95,7 @@ export default async function TrackPage({ params }: PageProps<"/[lang]/courses/[
               <span className="text-[3.25rem] font-semibold leading-none tracking-[-0.04em] tabular-nums text-ink">{fmt(price)}</span>
             </p>
             <p className="mt-3 text-[15px] text-muted">{t.feeNote}</p>
-            <Button href={site.enrollUrl} className="mt-7 w-full">{t.enroll}</Button>
+            <Button href={enrollHref} className="mt-7 w-full">{t.enroll}</Button>
             <dl className="mt-7 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line">
               {totals.map(([label, n]) => (
                 <div key={label} className="bg-surface px-4 py-3">
@@ -169,7 +170,7 @@ export default async function TrackPage({ params }: PageProps<"/[lang]/courses/[
       </section>
 
       <CtaBand title={fill(t.cta.title, { course: name })} lead={t.cta.lead}>
-        <Button href={site.enrollUrl}>{t.enroll}</Button>
+        <Button href={enrollHref}>{t.enroll}</Button>
       </CtaBand>
     </>
   );
