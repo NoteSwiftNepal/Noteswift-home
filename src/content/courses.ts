@@ -125,7 +125,11 @@ export const courseIds: Record<string, string> = {
   "class-12/management": "6a44d9a918f90365381a6468",
 };
 
-// Every "Enroll now" button opens the web app's login page.
-export function enrollUrl(): string {
-  return `${site.appUrl}/login`;
+// "Enroll now" goes straight to the track's checkout (Package Payment) in the
+// web app. A logged-in student lands on it directly; a visitor who isn't
+// logged in is sent to the web app's login first (/login?next=...) and then
+// brought back to this checkout.
+export function enrollUrl(slug: string, track: string): string {
+  const id = courseIds[`${slug}/${track}`];
+  return id ? `${site.appUrl}/courses/${id}/checkout` : `${site.appUrl}/courses`;
 }
