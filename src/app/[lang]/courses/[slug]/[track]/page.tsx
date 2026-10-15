@@ -49,7 +49,7 @@ export default async function TrackPage({ params }: PageProps<"/[lang]/courses/[
   const t = p.track;
   const fmt = new Intl.NumberFormat(lang === "ne" ? "ne-NP" : "en-US").format;
   const price = prices[`${slug}/${track}`];
-  const enrollHref = enrollUrl();
+  const enrollHref = enrollUrl(slug, track);
   const subjects = ((catalog as Record<string, Subject[]>)[`${slug}/${track}`] ?? []) as Subject[];
   const totals = [
     [t.totals.subjects, subjects.length],

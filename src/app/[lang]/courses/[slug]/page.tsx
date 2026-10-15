@@ -109,7 +109,7 @@ export default async function CoursePage({ params }: PageProps<"/[lang]/courses/
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Button href={localePath(lang, `/courses/${slug}/${tr.key}`)} variant="secondary" arrow={false}>{t.track.viewCourse}</Button>
-                  <Button href={enrollUrl()}>{t.track.enroll}</Button>
+                  <Button href={enrollUrl(slug, tr.key)}>{t.track.enroll}</Button>
                 </div>
               </div>
             </Reveal>
